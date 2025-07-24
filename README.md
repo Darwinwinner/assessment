@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Article Dashboard App
 
-## Getting Started
+A responsive Next.js dashboard application featuring:
 
-First, run the development server:
+- A sidebar with navigation and icons
+- Paginated and searchable tables for articles and users
+- Smooth loading states and active styling
+- Built with ShadCN UI, TailwindCSS, and TypeScript
+
+## 🚀 Demo
+
+> Replace this with your live URL once deployed (e.g., Vercel)
+
+## 🧰 Tech Stack
+
+- [Next.js 13+](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [ShadCN UI](https://ui.shadcn.com/)
+- [Lucide Icons](https://lucide.dev/)
+- TypeScript
+
+---
+
+## 📦 Setup Instructions
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/article-dashboard.git
+cd article-dashboard
+```
+
+### 2. Install dependencies
+
+Make sure you have Node.js v18+ installed.
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Start the development server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App will be running on [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Folder Structure (Important Parts)
 
-## Learn More
+```
+app/
+├── page.tsx                 → redirects to /articles
+├── articles/page.tsx       → main page with Article table
+├── users/page.tsx          → page with User table
+components/
+├── AppSidebar.tsx          → sidebar layout with navigation
+├── UserTable.tsx           → paginated and searchable user table
+├── ArticleTable.tsx        → paginated and searchable article table
+lib/
+├── api.ts                  → functions for fetching articles/users
+types/
+├── index.ts                → TypeScript types for Article and User
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔍 Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ✅ Sidebar
 
-## Deploy on Vercel
+- Contains links to "Articles" and "Users"
+- Active route highlighting
+- Icons (File for articles, User for users)
+- Dark-themed with subtle outlines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ✅ Articles Page (`/articles`)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Table displays article `title` and `author`
+- Cards clickable — redirect to actual article links
+- Searchable and paginated
+- Loading state shown while fetching data
+
+### ✅ Users Page (`/users`)
+
+- Table displays user `name`, `about`, `updated_at`
+- Search, pagination, sorting by date supported
+
+
+---
+
+## 🧑‍💻 Author
+
+Made by Darwin Reigh Calub
+

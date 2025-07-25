@@ -7,10 +7,6 @@ A responsive Next.js dashboard application featuring:
 - Smooth loading states and active styling
 - Built with ShadCN UI, TailwindCSS, and TypeScript
 
-## 🚀 Demo
-
-> Replace this with your live URL once deployed (e.g., Vercel)
-
 ## 🧰 Tech Stack
 
 - [Next.js 13+](https://nextjs.org/)

@@ -15,8 +15,9 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
-import { cn } from "@/lib/utils"; // Utility for conditional classNames
+import { cn } from "@/lib/utils"; 
 
+// Define the items for the sidebar menu
 const items = [
   {
     title: "Articles",
@@ -24,7 +25,7 @@ const items = [
     icon: Newspaper,
   },
   {
-    title: "Users",
+    title: "Authors",
     url: "/users",
     icon: Users,
   },
@@ -43,7 +44,7 @@ export function AppSidebar() {
             Articles.io
           </h1>
         </div>
-
+        {/* Main Menu */}
         <SidebarGroup>
           <SidebarGroupLabel className="text-base">Main Menu</SidebarGroupLabel>
           <SidebarGroupContent>

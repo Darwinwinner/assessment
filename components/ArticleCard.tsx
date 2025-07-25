@@ -9,10 +9,11 @@ import {Article} from "@/types";
 import { MessageCircle } from "lucide-react";
 
 export const ArticleCard = ({article }: { article: Article }) => {
-
+    
+    // Ensure article has a title or story_title and a URL or story_url
     const url = article.url || article.story_url;
     if (!article.title && !article.story_title) {
-        return null; // If no title or story title, don't render the card
+        return null; 
     }
 
     return (
@@ -25,7 +26,6 @@ export const ArticleCard = ({article }: { article: Article }) => {
                 </CardHeader>
                 
                 <CardContent className="flex flex-col gap-2 px-4">
-                    
                     <p className="text-base text-muted-foreground line-clamp-3">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                         non risus. Suspendisse lectus tortor, dignissim sit amet.

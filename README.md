@@ -22,8 +22,8 @@ A responsive Next.js dashboard application featuring:
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/article-dashboard.git
-cd article-dashboard
+git clone https://github.com/your-username/assessment.git
+cd assessment
 ```
 
 ### 2. Install dependencies
